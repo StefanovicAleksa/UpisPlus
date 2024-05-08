@@ -15,7 +15,7 @@
                 <i class="fas fa-school me-2 text-white"></i>
                 <span class="fs-4 text-white">UpisPlus</span>
             </a>
-            <hr class="text-white">
+            <hr>
             <ul class="nav nav-pills flex-column mb-auto">
                 <li>
                     <a href="/upis_plus/admin" class="nav-link link-light">

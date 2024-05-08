@@ -72,3 +72,7 @@ body {
 .nav-link .fa {
     margin-right: 10px;
 }
+
+hr {
+    border-top: 3px solid #fff;
+}
