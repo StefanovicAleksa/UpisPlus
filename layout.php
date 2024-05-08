@@ -32,7 +32,7 @@
                 <li>
                     <a href="/upis_plus/statistika-upisa-fakulteta" class="nav-link link-light">
                         <i class="fas fa-university me-2"></i>
-                        Statistika Upisa Fakulteta
+                        Statistika Upisa Na Fakultete
                     </a>
                 </li>
             </ul>
