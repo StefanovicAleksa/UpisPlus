@@ -1,5 +1,10 @@
 <?php
 include "../layout.php";
+
+if(!isset($_SESSION['user']) || $_SESSION['role'] != 'admin') {
+  header("Location: /upis_plus/account/login.php");
+  exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

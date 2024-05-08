@@ -1,6 +1,10 @@
 <?php 
 include 'functions.php'; 
 include '../layout.php';
+
+if(!isset($_SESSION['user'])) { 
+  header("Location /user_plus/account/login.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

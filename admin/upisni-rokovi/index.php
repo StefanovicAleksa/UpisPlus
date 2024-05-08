@@ -3,6 +3,10 @@ include '../../config.php';
 include 'functions.php'; 
 include "../../layout.php";
 
+if(!isset($_SESSION['user']) || $_SESSION['role'] != 'admin') {
+  header("Location: /upis_plus/account/login.php");
+  exit();
+}
 // Handle delete operation
 if(isset($_GET['delete'])){
     deleteRecord($conn,$_GET['delete']);

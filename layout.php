@@ -17,12 +17,13 @@
             </a>
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
-                <li>
-                    <a href="/upis_plus/admin" class="nav-link link-light">
-                        <i class="fas fa-user-shield me-2"></i>
-                        Admin
-                    </a>
-                </li>
+                <?php
+                    session_start();
+                    if(isset($_SESSION['user']) && $_SESSION['role'] == "admin") { 
+                        echo '<li><a href="/upis_plus/admin" class="nav-link link-light"><i class="fas fa-user-shield me-2"></i> Admin</a></li>';
+                    }
+                ?>
+                
                 <li>
                     <a href="/upis_plus/statistika-upisa-ucenika" class="nav-link link-light">
                         <i class="fas fa-chart-line me-2"></i>
@@ -36,11 +37,11 @@
                     </a>
                 </li>
             </ul>
-            <!-- <hr class="text-white">
-            <a href="#" class="nav-link link-light">
+            <hr class="text-white">
+            <a href="/upis_plus/account/logout.php" class="nav-link link-light">
                 <i class="fas fa-sign-out-alt me-2"></i>
                 Sign Out
-            </a> -->
+            </a>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
