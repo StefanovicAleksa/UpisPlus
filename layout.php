@@ -59,7 +59,7 @@
             <hr class="text-white">
             <a href="/upis_plus/account/logout.php" class="nav-link link-light">
                 <i class="fas fa-sign-out-alt me-2"></i>
-                Sign Out
+                <span class="nav-link-text">Sign Out</span>
             </a>
         </div>
     </div>
