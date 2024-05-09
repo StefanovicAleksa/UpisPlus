@@ -39,20 +39,20 @@
                 <?php
                     session_start();
                     if(isset($_SESSION['user']) && $_SESSION['role'] == "admin") { 
-                        echo '<li><a href="/upis_plus/admin" class="nav-link link-light"><i class="fas fa-user-shield me-2"></i> Admin</a></li>';
+                        echo '<li><a href="/upis_plus/admin" class="nav-link link-light"><i class="fas fa-user-shield me-2"></i><span class="nav-link-text"> Admin</span></a></li>';
                     }
                 ?>
                 
                 <li>
                     <a href="/upis_plus/statistika-upisa-ucenika" class="nav-link link-light">
                         <i class="fas fa-chart-line nav-link-icon"></i>
-                        <span class="nav-link-text">Statistika Upisa Učenika</span>
+                        <span class="nav-link-text"> Statistika Upisa Učenika</span>
                     </a>
                 </li>
                 <li>
                     <a href="/upis_plus/statistika-upisa-fakulteta" class="nav-link link-light">
                         <i class="fas fa-university nav-link-icon"></i>
-                        <span class="nav-link-text">Statistika Upisa Na Fakultete</span>
+                        <span class="nav-link-text"> Statistika Upisa Na Fakultete</span>
                     </a>
                 </li>
             </ul>
