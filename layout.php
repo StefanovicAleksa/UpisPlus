@@ -39,7 +39,7 @@
                 <?php
                     session_start();
                     if(isset($_SESSION['user']) && $_SESSION['role'] == "admin") { 
-                        echo '<li><a href="/upis_plus/admin" class="nav-link link-light"><i class="fas fa-user-shield me-2"></i> Admin</a></li>';
+                        echo '<li><a href="/upis_plus/admin" class="nav-link link-light"><i class="fas fa-user-shield me-2"></i><span class="nav-link-text"> Admin</span></a></li>';
                     }
                 ?>
                 
