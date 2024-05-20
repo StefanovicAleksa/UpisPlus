@@ -1,5 +1,5 @@
 <?php
-include 'functions.php'; // Include functions.php instead of config.php
+include 'functions.php';
 session_start();
 
 if(isset($_SESSION['user'])) {

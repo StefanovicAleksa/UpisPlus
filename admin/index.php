@@ -34,7 +34,6 @@ if(!isset($_SESSION['user']) || $_SESSION['role'] != 'admin') {
             <h2 class="text-center mb-0"><i class="fas fa-database mr-2"></i>Admin Panel</h2>
           </div>
           <div class="card-body">
-            <h3>Tables:</h3>
             <div class="list-group">
               <a href="tipovi-fakulteta" class="list-group-item list-group-item-action"><i class="fas fa-university mr-2"></i>Tipovi Fakulteta</a>
               <a href="generacije" class="list-group-item list-group-item-action"><i class="fas fa-users mr-2"></i>Generacije</a>

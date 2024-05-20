@@ -32,7 +32,7 @@
         <div class="d-flex flex-column flex-shrink-0 p-3 sidebar" style="height: 100vh;">
             <a href="/upis_plus" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                 <i class="fas fa-school text-white nav-link-icon"></i>
-                <span class="fs-4 text-white nav-link-text">UpisPlus</span>
+                <span class="fs-4 text-white nav-link-text"> UpisPlus</span>
             </a>
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
@@ -46,13 +46,13 @@
                 <li>
                     <a href="/upis_plus/statistika-upisa-ucenika" class="nav-link link-light">
                         <i class="fas fa-chart-line nav-link-icon"></i>
-                        <span class="nav-link-text">Statistika Upisa Učenika</span>
+                        <span class="nav-link-text"> Statistika Upisa Učenika</span>
                     </a>
                 </li>
                 <li>
                     <a href="/upis_plus/statistika-upisa-fakulteta" class="nav-link link-light">
                         <i class="fas fa-university nav-link-icon"></i>
-                        <span class="nav-link-text">Statistika Upisa Na Fakultete</span>
+                        <span class="nav-link-text"> Statistika Upisa Na Fakultete</span>
                     </a>
                 </li>
             </ul>

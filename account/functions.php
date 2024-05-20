@@ -16,10 +16,10 @@ function verifyPassword($username, $password) {
     if ($result->num_rows == 1) {
         $row = $result->fetch_assoc();
         if (password_verify($password, $row['password'])) {
-            return $row['role']; // Return the role if password matches
+            return $row['role']; 
         }
     }
-    return false; // Return false if password doesn't match or user doesn't exist
+    return false;
 }
 
 function logout() {
