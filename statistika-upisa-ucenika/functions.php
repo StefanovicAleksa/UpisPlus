@@ -1,18 +1,14 @@
 <?php
 include '../config.php';
 
-// Function to display data from the view
 function displayViewData() {
     include '../config.php';
-    // Query to fetch data from the view
+
     $sql = "SELECT * FROM view_lista_upisa";
 
-    // Execute the query
     $result = $conn->query($sql);
 
-    // Check if there are rows returned
     if ($result->num_rows > 0) {
-        // Loop through each row and display the data
         while ($row = $result->fetch_assoc()) {
             echo "<tr>";
             echo "<td>" . $row['JMBG'] . "</td>";
@@ -32,18 +28,14 @@ function displayViewData() {
     }
 }
 
-// Function to display the result of the stored procedure "Broj Upisa Po Godini"
 function displayProcedureResult() {
     include '../config.php';
-    // Query to call the stored procedure
+
     $sql = "CALL BrojUpisaPoGodini()";
 
-    // Execute the query
     $result = $conn->query($sql);
 
-    // Check if there are rows returned
     if ($result->num_rows > 0) {
-        // Loop through each row and display the data
         while ($row = $result->fetch_assoc()) {
             echo "<tr>";
             echo "<td>" . $row['Godina'] . "</td>";
@@ -55,18 +47,14 @@ function displayProcedureResult() {
     }
 }
 
-// Function to display the result of the stored procedure "Raspodela Upisa Po Polu"
 function displayPolProcedureResult() {
     include '../config.php';
-    // Query to call the stored procedure
+
     $sql = "CALL RaspodelaUpisaPoPolu()";
 
-    // Execute the query
     $result = $conn->query($sql);
 
-    // Check if there are rows returned
     if ($result->num_rows > 0) {
-        // Loop through each row and display the data
         while ($row = $result->fetch_assoc()) {
             echo "<tr>";
             echo "<td>" . $row['Pol'] . "</td>";
@@ -78,18 +66,15 @@ function displayPolProcedureResult() {
     }
 }
 
-// Function to display the result of the stored procedure "Broj Upisa Po Upisnom Roku"
+
 function displayUpisniRokProcedureResult() {
     include '../config.php';
-    // Query to call the stored procedure
+
     $sql = "CALL BrojUpisaPoUpisnomRoku()";
 
-    // Execute the query
     $result = $conn->query($sql);
 
-    // Check if there are rows returned
     if ($result->num_rows > 0) {
-        // Loop through each row and display the data
         while ($row = $result->fetch_assoc()) {
             echo "<tr>";
             echo "<td>" . $row['Naziv_upisnog_roka'] . "</td>";
